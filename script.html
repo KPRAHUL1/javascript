@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        s="abcabcbb"
+        var temp ="";
+    var count=0;
+
+    for(i=0;i<=s.length-1;i++){
+        temp +=s[i];
+        for(j=0;j<=s.length-1;j++){
+            if(temp == s[j]){
+                count++
+            }
+        }
+    }
+    console.log(count)
+    </script>
+</body>
+</html>

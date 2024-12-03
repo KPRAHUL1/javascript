@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p id="display"></p><hr>
+<p id="displays"></p><hr>
+<p id="display1"></p><hr>
+<p id="display2"></p><hr>
+<p id="display3"></p><hr>
+<p id="display4"></p><hr>
+<p id="display5"></p><hr>
+<p id="display6"></p><hr>
+<p id="display7"></p><hr>
+<p id="display8"></p><hr>
+<p id="display9"></p><hr>
+<p id="display10"></p><hr>
+<p id="display11"></p><hr>
+<p id="display12"></p><hr>
+<p id="display13"></p><hr>
+    <script>
+     let row=5;
+     let variable=1;
+     let pattern="";
+     for(i=1;i<=row;i++){
+        for(j=1;j<=i;j++){
+            pattern +=variable;
+           variable++;
+        }
+        pattern +="<br>";
+     }
+
+
+     let rows=5;
+     let patterns="";
+     for(i=1;i<=rows;i++){
+        for(j=1;j<=i;j++){
+            patterns +=j;
+        }
+        patterns +="<br>";
+     }
+
+     let row1=5;
+     let pattern1="";
+
+     for(i=1;i<=row1;i++){
+        for(j=1;j<=i;j++){
+            pattern1 +=i;
+        }
+        pattern1 +="<br>"
+     }
+
+     let row2=5;
+     let pattern2="";
+
+     for(i=1;i<=row2;i++){
+        for(j=1;j<=6-i;j++){
+            pattern2 +=j;
+        }
+        pattern2 +="<br>"
+     }
+
+     let row3=5;
+     let pattern3="";
+      
+     for(i=1;i<=row3;i++){
+        for(space=1;space<=5-i;space++){
+            pattern3 +="&nbsp";
+        }
+        for(j=1;j<=2 * i - 1;j++){
+            pattern3 +=j;
+        }
+        pattern3 +="<br>"
+     }
+
+     let row4=3;
+     let pattern4="";
+     let variable1=1;
+
+     for(i=1;i<=row4;i++){
+        for(space=1;space<=row4-i;space++){
+            pattern4 +="&nbsp";
+        }
+        for(j=1;j<=2 * i - 1;j++){
+            pattern4 += variable1;
+            variable1 ++;
+        }
+        
+        pattern4 +="<br>"
+     }
+
+     let row5=5;
+     let pattern5="";
+
+     for(i=1;i<=row5;i++){
+        for(j=1;j<=row5;j++){
+            pattern5 +="*";
+        }
+        pattern5 +="<br>";
+     }
+
+     let row6=5;
+     let pattern6="";
+
+     for(i=1;i<=row6;i++){
+        for(j=1;j<=5;j++){
+        
+            if(i==1 || i==row6){
+                pattern6 +="*";
+            }
+            else if(j==1 || j==row6){
+                pattern6 +="*";
+            }
+            else{
+                pattern6 +="&nbsp&nbsp";
+            }
+        }
+        pattern6 +="<br>";
+     }
+
+     let row7=5;
+     let pattern7="";
+
+     for(i=1;i<=row7;i++){
+        for(space=1;space<=5-i;space++){
+            pattern7 +="o";
+        }
+        for(j=1;j<=i;j++){
+            pattern7 +="*";
+        }
+        pattern7 +="<br>";
+     }
+
+     let row8=5;
+     let pattern8="";
+
+     for(i=1;i<=row8;i++){
+        for(j=1;j<=i;j++){
+            pattern8 +="*"
+        }
+        for(space=1;space<=row8-i;space++){
+            pattern8 +="o";
+        }
+        pattern8 +="<br>"
+     }
+
+     let row9=5;
+     let pattern9="";
+
+     for(i=1;i<=row9;i++){
+        for(space=1;space<=row9-i;space++){
+            pattern9 +="&nbsp&nbsp";
+        }
+        for(j=1;j<=2*i-1;j++){
+            pattern9 +="*";
+        }
+        pattern9 +="<br>";
+     }
+
+     let row10=5;
+     let pattern10='';
+
+     for(i=1;i<=row10;i++){
+        for(j=5;j>=i;j--){
+            pattern10 +=j;
+        }
+        pattern10 +="<br>"
+     }
+
+     let row11=5;
+     let pattern11="";
+
+     for(i=1;i<=row11;i++){
+        for(j=6-i;j>=1;j--){
+            pattern11 +=j;
+        }
+        pattern11 +="<br>"
+     }
+
+     let row12=5;
+     let pattern12="";
+    
+     for(i=1;i<=row12;i++){
+        for(j=1;j<=i;j++){
+           if(i==1 || i==row12 ){
+            pattern12 +="*";
+           }
+           else if(j == 1 || j == i || i == row12){
+            pattern12+="*";
+           }
+           else{
+            pattern12 +="&nbsp&nbsp"
+           }
+
+
+        }
+        pattern12 +="<br>";
+     }
+
+     let row13=8;
+     let pattern13="";
+
+     for(i=1;i<=row13;i++){
+        for(j=1;j<=row13;j++){
+            if(i==1 ||i==row13){
+                pattern13 +="*";
+            }
+            else if(i == j || j == (row13 - i + 1)){
+                pattern13 +="*";
+
+                
+            }
+            else{
+                pattern13 +="&nbsp&nbsp";
+            }
+        }
+        pattern13 +="<br>";
+     }
+
+document.getElementById('display').innerHTML=pattern;
+document.getElementById('displays').innerHTML=patterns;
+document.getElementById('display1').innerHTML=pattern1;
+document.getElementById('display2').innerHTML=pattern2;
+document.getElementById('display3').innerHTML=pattern3;
+document.getElementById('display4').innerHTML=pattern4;
+document.getElementById('display5').innerHTML=pattern5;
+document.getElementById('display6').innerHTML=pattern6;
+document.getElementById('display7').innerHTML=pattern7;
+document.getElementById('display8').innerHTML=pattern8;
+document.getElementById('display9').innerHTML=pattern9;
+document.getElementById('display10').innerHTML=pattern10;
+document.getElementById('display11').innerHTML=pattern11;
+document.getElementById('display12').innerHTML=pattern12;
+document.getElementById('display13').innerHTML=pattern13;
+
+    </script>
+</body>
+</html>
