@@ -1,0 +1,134 @@
+// console.log("2" > "10");
+// console.log("2" > 10);
+
+
+// console.log(1 + false)
+// console.log(1 + true);
+// console.log(1-false);
+
+
+// let x =10;
+// {
+//     let x=20;
+// }
+// console.log(x);
+
+// console.log(x);
+// var x = "Hello";
+// console.log(x);
+
+// console.log([] + []);
+// console.log([1] + []);
+// console.log([1] + "abc");
+
+
+// function getAge(...args){
+//     console.log(typeof args);
+// }
+// getAge(20);
+
+// const numbers = [1,2,3,4,5];
+// const [x,...y] = numbers;
+// console.log(x,y);
+
+// let nums = [1,2,3,4];
+// delete nums[2];
+// console.log(nums.length);
+
+// let num = 0;
+// console.log(num++);
+// console.log(++num);
+// console.log(num);
+
+
+
+// const x= {name:"sai"};
+// const arr = ["name"];
+// x[arr] = "krishna";
+// console.log(x.name);
+
+// const arr = [1,2];
+// for(var i=0;i<arr.length;i++){
+//     setTimeout(()=>{
+//         console.log(i);
+        
+//     },[1000])
+// }
+
+// let x= "10";
+// console.log(x++);
+
+// const arr = [1,2,3,4];
+// console.log(1 in arr);
+// console.log(2 in arr);
+// console.log(4 in arr);
+
+// let x= "8";
+// let a= 1;
+// console.log(+x + a + 1);
+
+
+// var countSubarrays = function(nums, k) {
+//     let maxNum = Math.max(...nums);  
+//     let left = 0;  
+//     let countMax = 0;  
+//     let res = 0;    
+//     for (let right = 0; right < nums.length; right++) {
+//         if (nums[right] === maxNum) {
+//             countMax++;
+//         }
+//         while (countMax >= k) {
+//             res += nums.length - right;
+//             if (nums[left] === maxNum) {
+//                 countMax--;
+//             }
+//             left++;
+//         }
+//     }
+//     return res;
+// };
+
+
+
+
+// let x = [20,1,3].sort()
+// console.log(x);
+
+
+// console.log([1,2]+![]);
+
+// let x =1;
+// let y= 2;
+// console.log(x++ + ++y);
+
+// console.log(2+"3"+4);
+
+// let x ="10";
+// console.log(x++);
+
+// console.log(+true);
+// console.log(+false);
+// console.log(+"123");
+// console.log(+null);
+
+// console.log("typeof null:", typeof null);           
+// console.log("typeof undefined:", typeof undefined);   
+// console.log("typeof NaN:", typeof NaN);              
+// console.log("typeof function(){}:", typeof function(){}); 
+
+
+// console.log(Boolean({}));
+// console.log(Boolean([]));
+// console.log(Boolean(""));
+// console.log(Boolean(new Boolean(false)));
+
+
+
+console.log(0 || 1);
+console.log(1 || 2);
+console.log(0 && 1);
+console.log(1 && 2);
+
+
+
+

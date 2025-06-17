@@ -1,11 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
+    <style>
+      button {
+        margin-top: 10px;
+        padding: 8px 14px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+   .responsive-heading {
+      font-size: clamp(1.5rem, 5vw, 3rem);
+    }
+
+    .square-img {
+     aspect-ratio: 1 / 1;
+     width: 100%;
+     max-width: 200px;
+     object-fit: cover;
+     border-radius: 12px;
+      }
+
+ 
+
+.glass-card {
+  backdrop-filter: blur(10px) brightness(0.9);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  color: black;
+}
+
+input[type="checkbox"] {
+  accent-color: #00bfff;
+  transform: scale(1.3);
+}
+
+.scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.page {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- <section>
+        <h2>🗨️ &lt;dialog&gt;</h2>
+        <dialog id="myDialog" open>
+          <p>This is a native dialog box!</p>
+          <button 
+          onclick="document.getElementById('myDialog').close()">
+            Close
+        </button>
+        </dialog>
+      </section> -->
+    <!-- <section>
+        <h2>📂 &lt;details&gt; + &lt;summary&gt;</h2>
+        <details>
+          <summary>Click to expand!</summary>
+          <p>This is hidden content inside a
+             &lt;details&gt; tag.</p>
+        </details>
+      </section> -->
+
+    <!-- <section>
+        <h2> &lt;template&gt; Example</h2>
+        <p>This content is not visible until cloned by JavaScript:</p>
+        <template id="myTemplate">
+          <p>This came from a &lt;template&gt;!</p>
+        </template>
+        <button onclick="useTemplate()">Load Template</button>
+        <div id="templateOutput"></div>
+      </section> -->
+
+    <!-- <section>
+        <h2>🖼️ &lt;picture&gt; + &lt;source&gt;</h2>
+        <picture>
+          <source srcset="Heartbeat.mp4" media="(max-width: 600px)">
+          <img src="image.jpg" alt="Responsive Image">
+        </picture>
+      </section> -->
+
+    <!-- <section>
+        <p>Progress: <progress value="70" max="100"></progress></p>
+        <p>Meter (score): <meter value="0.7">70%</meter></p>
+      </section> -->
+
+    <!-- 
+      <section>
+        <h2>🔍 &lt;mark&gt;</h2>
+        <p>Highlight important text with 
+          <mark>&lt;mark&gt;</mark> like this</p>
+      </section>
+     -->
+
+    <!-- <section>
+      <h2>📤 &lt;output&gt;</h2>
+      <form 
+      oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50"> +
+        <input type="number" id="b" value="25"> =
+        <output name="result" for="a b">75</output>
+      </form>
+    </section> -->
+
+    <!-- <section>
+      <h2>🔢 &lt;data&gt;</h2>
+      <p>Star rating: <data value="4.5">★★★★☆</data></p>
+    </section>
+  
+
+    <section>
+      <h2>🔥 Which tag surprised you the most?</h2>
+      <p>Drop your favorite in the comments! 👇</p>
+      <p>#HTML #Frontend #WebDev #2025Ready</p>
+    </section>
+
+    
+      <script>
+        function useTemplate() {
+          const template = document.getElementById("myTemplate");
+          const clone = template.content.cloneNode(true); 
+          document.getElementById("templateOutput").appendChild(clone); 
+        }
+      </script>
+       -->
+
+    <!-- <h1 class="responsive-heading">Hello, Gen Z World 👋</h1> -->
+
+    <!-- <img src="image.jpg" class="square-img" alt="Avatar" /> -->
+<!-- 
+    <div class="glass-card">
+      <h2>Glass Vibes Only ✨</h2>
+    </div>
+     -->
+     <!-- <label>
+      <input type="checkbox" checked />
+      Remember Me
+    </label> -->
+    
+    <!-- <div class="scroll-container">
+      <section class="page">Page 1</section>
+      <section class="page">Page 2</section>
+    </div>
+    
+
     <script>
         s="abcabcbb"
         var temp ="";
@@ -19,7 +173,15 @@
             }
         }
     }
-    console.log(count)
-    </script>
-</body>
+    console.log(count) -->
+    <!-- </script> -->
+     <div onclick="console.log('First div');
+     ">
+      <div onclick="console.log('second div');
+      ">
+        <button onclick="console.log('button');
+        ">Click</button>
+      </div>
+     </div>
+  </body>
 </html>
