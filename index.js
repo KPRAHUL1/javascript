@@ -124,11 +124,19 @@
 
 
 
-console.log(0 || 1);
-console.log(1 || 2);
-console.log(0 && 1);
-console.log(1 && 2);
+// console.log(0 || 1);
+// console.log(1 || 2);
+// console.log(0 && 1);
+// console.log(1 && 2);
 
 
 
 
+let count = 0;
+const intervalId = setInterval(() => {
+  count++;
+  console.log("Count:", count);
+  if (count === 5) {
+    clearInterval(intervalId); // Stop the interval after 5 executions
+  }
+}, 1000);
