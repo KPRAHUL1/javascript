@@ -140,9 +140,53 @@
 //     clearInterval(intervalId); // Stop the interval after 5 executions
 //   }
 // }, 1000);
-var isPalindrome = function(x) {
-    
-}
-let x = 121;
-console.log(isPalindrome(x));
+// var isPalindrome = function(x) {
+//   let reversedNum =0;
+//     while (x!=0) {
+//       let remainder = x%10;
+//       reversedNum = reversedNum*10+remainder;
+//       x = Math.floor(x/10);
+      
+//     }
 
+// }
+// let x = 121;
+// console.log(isPalindrome(x));
+  // if (x<0) {
+  //   return false;
+  // } 
+  //    let orginal =x;
+  // let reversedNum = 0;
+  //  while (x!=0) {
+  //   let remainder=x%10;
+
+    
+  //   reversedNum = reversedNum*10+remainder;
+  //   x = Math.floor(x/10);
+  //  }
+   
+   
+  //  return reversedNum == orginal;
+
+//  console.log(x==Number(x.toString().split('').reverse().join('')) );
+
+var isPalindrome = function(x) {
+
+ let string = x.toString();
+ let left =0;
+ let right = string.length-1;
+ while (left < right) {
+  if (string[left]!=string[right]) {
+    return false;
+  }
+  else{
+    right--;
+    left++;
+  }
+ }
+ return true;
+ 
+  
+}
+let x=-121;
+console.log(isPalindrome(x));
