@@ -193,26 +193,40 @@
 // let arr = [1, 2, 0, 4, 3, 0, 5, 0]
 //     console.log(pushZerosToEnd(arr));
     
-const pushZerosToEnd=(arr)=> {
-        // code here
-        let count =0;
-        let temp =[];
-        for(let i=0;i<arr.length;i++){
+// const pushZerosToEnd=(arr)=> {
+//         // code here
+//         let count =0;
+//         let temp =[];
+//         for(let i=0;i<arr.length;i++){
             
-            if(arr[i]!=0){
-                temp.push(arr[i]);
-            }
-            else{
-                count ++;
-            }
-        }
-        for (let i=0;i<count;i++){
-         temp.push(0);
-        }
-        return temp;
-    }
-    let arr = [3,5,0,0,4]
-console.log(pushZerosToEnd(arr));
+//             if(arr[i]!=0){
+//                 temp.push(arr[i]);
+//             }
+//             else{
+//                 count ++;
+//             }
+//         }
+//         for (let i=0;i<count;i++){
+//          temp.push(0);
+//         }
+//         return temp;
+//     }
+// const pushZerosToEnd=(arr)=> {
+//         // code here
+//         let z =0;
+//         for(let i=0;i<arr.length;i++){
+//             if(arr[i]!=0){
+//                 arr[z]=arr[i];
+//                 z++;
+//             }
+//         }
+//         for(let i=z+1;i<z;i++){
+//             arr[i]=0;
+//         }
+//         return arr;
+//     }
+//     let arr = [3,5,0,0,4]
+// console.log(pushZerosToEnd(arr));
 
 //    let  s = "cat";
 //    let t = "car";

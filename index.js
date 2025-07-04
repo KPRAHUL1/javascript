@@ -132,11 +132,17 @@
 
 
 
-let count = 0;
-const intervalId = setInterval(() => {
-  count++;
-  console.log("Count:", count);
-  if (count === 5) {
-    clearInterval(intervalId); // Stop the interval after 5 executions
-  }
-}, 1000);
+// let count = 0;
+// const intervalId = setInterval(() => {
+//   count++;
+//   console.log("Count:", count);
+//   if (count === 5) {
+//     clearInterval(intervalId); // Stop the interval after 5 executions
+//   }
+// }, 1000);
+var isPalindrome = function(x) {
+    
+}
+let x = 121;
+console.log(isPalindrome(x));
+
