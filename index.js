@@ -170,24 +170,24 @@
 
 //  console.log(x==Number(x.toString().split('').reverse().join('')) );
 
-// var isPalindrome = function(x) {
+var isPalindrome = function(x) {
 
-//  let string = x.toString();
-//  let left =0;
-//  let right = string.length-1;
-//  while (left < right) {
-//   if (string[left]!=string[right]) {
-//     return false;
-//   }
-//   else{
-//     right--;
-//     left++;
-//   }
-//  }
-//  return true;
+ let string = x.toString();
+ let left =0;
+ let right = string.length-1;
+ while (left < right) {
+  if (string[left]!=string[right]) {
+    return false;
+  }
+  else{
+    right--;
+    left++;
+  }
+ }
+ return true;
  
   
-// }
+}
 // let x=-121;
 // console.log(isPalindrome(x));
 let nums1 = [1,3] 
