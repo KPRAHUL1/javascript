@@ -197,8 +197,30 @@
 // nums1.sort()
 // console.log(nums1);
 
-let letters = ["c","f","j"];
- let start =0;
-         let end = letters.length-1;
-let middle =start+(end-start)/2 ;
-console.log(middle);
+// let letters = ["c","f","j"];
+//  let start =0;
+//          let end = letters.length-1;
+// let middle =start+(end-start)/2 ;
+// console.log(middle);
+
+var searchInsert = function(nums, target) {
+    let start = 0;
+    let end = nums.length-1;
+    
+  while (start<=end) {
+    let mid = Math.floor((start + end)/2);
+   if(target == nums[mid]){
+       return mid;
+   }
+   else if(nums[mid]<target){
+    start = mid +1;
+   }
+   else{
+    end = mid-1;
+   }
+  }
+  return start;
+};
+let nums = [1,3,5,6]
+let target = 6;
+console.log(searchInsert(nums,target));
