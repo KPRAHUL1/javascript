@@ -224,3 +224,12 @@
 // let nums = [1,3,5,6]
 // let target = 6;
 // console.log(searchInsert(nums,target));
+
+// let nums=[1,2];
+// let nums1 = [3,5];
+// console.log((nums.length+nums1.length)/2);
+// let num =10;
+
+// console.log(Number(num.toString().split('')));
+
+let strs = ["flower","flow","flight"];
