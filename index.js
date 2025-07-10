@@ -232,4 +232,45 @@
 
 // console.log(Number(num.toString().split('')));
 
-let strs = ["flower","flow","flight"];
+// let strs = ["flower","flow","flight"];
+
+var searchRange = function(nums, target,findStartIndex) {
+    let start = 0;
+    let end = nums.length-1;
+    let ans = -1;
+    let mid;
+    if(nums.length<0 || !nums.includes(target)){
+      return [-1,-1];
+    }
+  while (start<=end) {
+    
+     mid = Math.floor((start + end)/2);
+     
+ if(nums[mid]<target){
+    start = mid +1;
+   }
+   else if(nums[mid]>target){
+    end = mid-1;
+   }
+   else{
+    ans = mid;
+    if(findStartIndex){
+      end = mid -1
+    }
+    else{
+      start = mid+1
+    }
+   }
+  }
+  return ans;
+};
+let nums = [5,7,7,8,8,8,8,8,10]
+let target = 8
+let ans = [-1,-1];
+ans[0]=searchRange(nums,target,true);
+if(ans[0]!=-1){
+ans[1] = searchRange(nums,target,false)
+}
+console.log(ans);
+
+
